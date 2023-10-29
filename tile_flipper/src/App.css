@@ -43,6 +43,18 @@
   border-left-width: 0.3rem;
   margin: 0 0.15rem;
 }
+.tileFailure {
+  background-color: #880808;
+  width: 6rem;
+  height: 6rem;
+  border: 0.15rem solid #D22B2B;
+  border-radius: 7%;
+  border-right-color: 		#DC143C;
+  border-right-width: 0.3rem;
+  border-left-color:	#F88379;
+  border-left-width: 0.3rem;
+  margin: 0 0.15rem;
+}
 
 .mainWrapper {
   display: flex;
