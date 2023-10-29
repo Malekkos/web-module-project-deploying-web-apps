@@ -1,21 +1,20 @@
 import React, { useState }  from "react"
-import Tile from "./tile"
+import TileSuccess from "./tileSuccess"
+import TileFailure from "./tileFailure"
+import tilesData from "../dataForTiles"
+// import "../App.css"
 
 const Tiles = () => {
-  // const [numberOfTiles, setNumberOfTiles] = useState(25)
-  const numberOfTiles = 25
-  const num = Array(numberOfTiles)
-  num.fill(1, 0, 25)
-  // console.log(num)
+  
+  const [tiles, setTiles] = useState(tilesData)
+
   return (
-    <div>
-      <h3>Tiles</h3>
-      {num.map((tile, idx) => {
-        // {console.log("ive ran")}
-        // {console.log(tile)}
-        // idx++
+    <div className="tilesWrapper">
+      {tiles.map((tile, idx) => {
+        console.log("tile", tile, "id", idx)
+        
         return (
-            <Tile key={idx} />
+            <TileSuccess className="tile" key={idx} />
         )
       })}
     </div>

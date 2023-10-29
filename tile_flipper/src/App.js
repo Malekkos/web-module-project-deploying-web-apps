@@ -9,7 +9,7 @@ function App() {
         <h1>Tile Flipper</h1>
         <h2>Your goal is to make all the tiles orange</h2>
       </div>
-      <div>
+      <div className="mainWrapper">
         <Tiles />
       </div>
     </div>

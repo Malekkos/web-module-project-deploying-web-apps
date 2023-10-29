@@ -23,11 +23,34 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.tile {
+.tilesWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 40%;
+  /* justify-self: center; */
+  /* justify-items: center; */
+  /* align-items: center; */
+}
+.tileSuccess {
   background-color: orange;
-  width: 15%;
+  width: 6rem;
+  height: 6rem;
+  border: 0.15rem solid goldenrod;
+  border-radius: 7%;
+  border-right-color: antiquewhite;
+  border-right-width: 0.3rem;
+  border-left-color:khaki;
+  border-left-width: 0.3rem;
+  margin: 0 0.15rem;
 }
 
+.mainWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
 
 .App-link {
   color: #61dafb;
