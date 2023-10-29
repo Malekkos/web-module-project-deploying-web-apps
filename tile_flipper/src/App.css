@@ -33,8 +33,8 @@
 }
 .tileSuccess {
   background-color: orange;
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   border: 0.15rem solid goldenrod;
   border-radius: 7%;
   border-right-color: antiquewhite;
@@ -45,8 +45,8 @@
 }
 .tileFailure {
   background-color: #880808;
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   border: 0.15rem solid #D22B2B;
   border-radius: 7%;
   border-right-color: 		#DC143C;
@@ -74,5 +74,87 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1660px ) {
+  .tileFailure, .tileSuccess {
+    width: 7rem;
+    height: 7rem;
+  }
+  
+}
+@media screen and (max-width: 1480px) {
+  .tileFailure, .tileSuccess {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .tileFailure, .tileSuccess {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 1059px) {
+  .tileFailure, .tileSuccess {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .tileFailure, .tileSuccess {
+    width: 4rem;
+    height: 4rem;
+    border-width: 0.05;
+    margin: 0.05
+  }
+  @media screen and (max-width: 860px) {
+    .tileFailure, .tileSuccess {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-width: 0.04;
+      margin: 0.04
+    }
+  }
+  @media screen and (max-width: 760px) {
+    .tileFailure, .tileSuccess {
+      width: 3rem;
+      height: 3rem;
+      border-width: 0.02;
+      margin: 0.02
+    }
+  }
+  @media screen and (max-width: 660px) {
+    .tileFailure, .tileSuccess {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-width: 0.02;
+      margin: 0.02
+    }
+    .tilesWrapper {
+      width: 70%
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .tileFailure, .tileSuccess {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-width: 0.02;
+      margin: 0.02
+    }
+    .tilesWrapper {
+      width: 80%
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .tileFailure, .tileSuccess {
+      width: 4rem;
+      height: 4rem;
+      border-width: 0.02;
+      margin: 0.02
+    }
+    .tilesWrapper {
+      width: 80%
+    }
   }
 }

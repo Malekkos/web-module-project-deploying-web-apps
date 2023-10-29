@@ -1,9 +1,15 @@
 
 
 const TileFailure = () => {
+  
+  const handleClick = event => {
+  //   console.log(event.target.classList)
+    event.target.classList = "tileSuccess"
+  }
+
   return (
     <div className="tileWrapper">
-      <input className="tileFailure" type="button" value=""></input>
+      <input onClick={event => handleClick(event)} className="tileFailure" type="button" value=""></input>
     </div>
   )
 }

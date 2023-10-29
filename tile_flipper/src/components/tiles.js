@@ -7,7 +7,9 @@ import tilesData from "../dataForTiles"
 const Tiles = () => {
   const [tiles, setTiles] = useState(tilesData)
   console.log(tilesData)
-
+  const handleClick = event => {
+    console.log(event)
+  }
   return (
     <div className="tilesWrapper">
       {tiles.map((tile, idx) => {
