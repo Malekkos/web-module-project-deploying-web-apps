@@ -1,15 +1,13 @@
 import React from "react"
 
 const TileSuccess = () => {
-
+  
   const handleClick = event => {
-    console.log(event.target.className)
     if(event.target.className === "tileFailure") {
       event.target.className = "tileSuccess"
     } else {
-    event.target.className = "tileFailure"
-    return
-  }
+      event.target.className = "tileFailure"
+    }
   }
 
   return (

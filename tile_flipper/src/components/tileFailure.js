@@ -3,8 +3,11 @@
 const TileFailure = () => {
   
   const handleClick = event => {
-  //   console.log(event.target.classList)
-    event.target.classList = "tileSuccess"
+    if(event.target.className === "tileFailure") {
+      event.target.className = "tileSuccess"
+    } else {
+      event.target.className = "tileFailure"
+    }
   }
 
   return (
